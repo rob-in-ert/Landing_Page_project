@@ -1,29 +1,169 @@
 .page {
-    display: flex;
-    flex-direction: column;   
+    flex-direction: column;
+    margin: 0;   
 }
-
-.top {
+/* .blue-back is the background color for header,footer,
+   and top portion of webpage*/
+.blue-back{
     background-color: #1f2937;
 }
-.header {
+/*header container has logo and links nested within*/
+header {
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding-top: 5px;
 }
 ul, a {
     display: flex;
-    
     color: #e5e7eb;
     list-style: none;
-    margin-left: auto;
-    margin-right: 10%;
-    gap: 10px;
+    margin: 0 10% 0 auto;
+    gap: 20px;
     font-size: 14px;
-    text-decoration: none;   
+    text-decoration: none;
+    white-space: nowrap;
 }
 .logo {
    color: #f9faf8;
    font-size: 24px;
    margin-left: 10%;
+}
+/*.headline class has .info and .placeholder containers nested within*/
+.headline {
+    display: flex;
+    gap: 5%;
+    padding: 100px 0 100px 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 10%;
+}
+.placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-right: 10%;
+}
+/*IDs and button nested within .placeholder class*/
+#title {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+#title-info {
+    color: #f9faf8;
+    margin-bottom: 10px;
+}
+
+button {
+    margin: auto;
+    background-color: #3882f6;
+    border-radius: 6px;
+    color: #f9faf8;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 7px 30px 7px 30px;
+}
+button.signup {
+    margin-left: 0;
+    border: 0;
+        
+}
+/*.place-text is a padded div within the .placeholder container
+and is meant to be an image in the future*/
+.place-text {
+    display: flex;
+    color:#e5e7eb;
+    background-color: grey;
+    flex: 1 1 0;
+    padding: 100px;
+    }
+
+/*.information class has information and a container with
+ several images/subtext nested within*/
+.information-section {
+    margin: 40px 0 80px 0;
+}
+#rando-info {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 60px;
+}
+/*.imgs container has 4 images with subtext within*/
+.imgs {
+    display: flex;
+    margin: 0% 15% 0% 15%;
+    justify-content: space-around;
+}
+.img {
+    padding: 75px;
+    border: solid blue;
+    border-radius: 6px;
+}
+/*paragraphs are wrapped below images*/
+p {
+    margin-top: 0;
+    width: 160px;
+    color: rgb(66, 64, 64);
+}
+/*quote section contains a quote div and signature div*/
+.quote-section {
+    background-color: #e5e7eb;
+    padding: 80px 0 80px 0;
+}
+#quote {
+    font-style: italic;
+    font-size: 36px;
+    color: #1f2937;
+    margin: 0 15% 0 15%;
+}
+#signature {
+    font-weight: bold;
+    font-size: large;
+    text-align: end ;
+    margin-right: 20%;
+    justify-content: flex-end;
+}
+
+.call-to-A {
+    padding: 80px 0 80px 0;
+    justify-content: center;
+}
+.call-container {
+    display: flex;
+    justify-content: center;
+    background-color: #3882f6;
+    border-radius: 6px;
+    padding: 50px 0 50px 0;
+    margin: 0 12% 0 12%;
+}
+
+.call-text {
+    margin-left: 15%;
+    color: #f9faf8;
+}
+
+button.call-button {
+   margin-left: auto;
+   margin-right: 10%;
+   border-color: white;
+}
+
+#call-text-large {    
+    font-weight: bolder;
+    font-size: large;
+}
+
+#footer {
+    display: flex;
+    padding: 20px 0 20px 0;
+    justify-content: center;
+    color: #e5e7eb;
+    margin-bottom: -10px;
 }
